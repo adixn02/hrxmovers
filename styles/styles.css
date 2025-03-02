@@ -1,0 +1,377 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+    font-size: 62.5%;
+    text-decoration: none;
+}
+
+*::selection {
+    background-color: transparent;
+    color: transparent;
+}
+
+/* Scrollbar */
+*::-webkit-scrollbar {
+    width: 0.31rem;
+    height: 0.1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 20rem;
+}
+/* reusable classes */
+.mainYellow{
+    background-color: rgb(242, 169, 4);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Top Bar Styling */
+.top-bar,header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(241, 240, 245);
+    color: black;
+    padding: 10px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar i {
+    color: red;
+    margin: 0 5px;
+    font-size: 2rem;
+}
+
+/* Header Styling */
+header {
+    background-color: white;
+    padding-top: 60px;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    padding: 1rem 1.5rem;
+}
+
+.nav-logo h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 3rem;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff4757;
+    transform: translateY(-2px);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    border-radius: 2px;
+}
+/* main */
+main{
+    margin-top: 14rem;
+}
+.mainh1{
+    font-size: 6rem !important;
+}
+
+
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.textbox h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.textbox .text-danger {
+    color: red;
+}
+
+.imgbox img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* statis section home */
+.stats-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.stats-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #dc3545; /* Bootstrap text-danger color */
+    margin-bottom: 10px;
+}
+
+.stats-section h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.stats-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.divider {
+    width: 50px;
+    height: 2px;
+    background-color: #dc3545; /* Bootstrap text-danger color */
+    margin: 20px auto;
+}
+
+/* How Movers Work Section */
+.container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.container p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* services section */
+.services-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.services-section h2 span {
+    color: #dc3545; /* Bootstrap text-danger color */
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+
+/* footer banner */
+.banner {
+    background-color:rgba(235, 239, 239, 0.938); /* Red background */
+    color: black;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.banner h2 strong {
+    font-weight: bold;
+}
+
+.banner h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: red;
+    margin-top: 8px;
+}
+
+.quote-btn {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+.quote-btn::before, .quote-btn::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color:orange;
+}
+
+.quote-btn::before {
+    top: 50%;
+    left: -30px;
+    transform: rotate(45deg);
+}
+
+.quote-btn::after {
+    top: 50%;
+    right: -30px;
+    transform: rotate(-45deg);
+}
+
+.banner::before, .banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 150%;
+    height: 5px;
+    background-color: white;
+}
+
+.banner::before {
+    left: -50%;
+    top: 0;
+}
+
+.banner::after {
+    left: -50%;
+    bottom: 0;
+}
+
+/* footer */
+.footer {
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1000px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 12rem;
+        flex-direction: column;
+        background-color:white;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+      
+        transition: 0.3s;
+        /* border: 2px solid green; */
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
