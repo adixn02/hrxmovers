@@ -116,6 +116,80 @@ header {
     background-color: black;
     border-radius: 2px;
 }
+/* label starts here */
+/* From Uiverse.io by rishichawda */ 
+/* The switch - the box around the slider */
+#theme-toggle-button {
+    font-size: 10px;
+    position: relative;
+    display: inline-block;
+    width: 7em;
+    cursor: pointer;
+  }
+  
+  /* Hide default HTML checkbox */
+  #toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  #container,
+  #patches,
+  #stars,
+  #button,
+  #sun,
+  #moon,
+  #cloud {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.25s;
+  }
+  
+  /* night sky background */
+  #toggle:checked + svg #container {
+    fill: #2b4360;
+  }
+  
+  /* move button to right when checked */
+  #toggle:checked + svg #button {
+    transform: translate(28px, 2.333px);
+  }
+  
+  /* show/hide sun and moon based on checkbox state */
+  #sun {
+    opacity: 1;
+  }
+  
+  #toggle:checked + svg #sun {
+    opacity: 0;
+  }
+  
+  #moon {
+    opacity: 0;
+  }
+  
+  #toggle:checked + svg #moon {
+    opacity: 1;
+  }
+  
+  /* show or hide background items on checkbox state */
+  #cloud {
+    opacity: 1;
+  }
+  
+  #toggle:checked + svg #cloud {
+    opacity: 0;
+  }
+  
+  #stars {
+    opacity: 0;
+  }
+  
+  #toggle:checked + svg #stars {
+    opacity: 1;
+  }
+  
 /* main */
 main{
     margin-top: 14rem;
@@ -147,6 +221,38 @@ main {
     max-width: 100%;
     height: auto;
 }
+/* testimonials starts */
+/* reviw styling */
+article .cards {
+    position: relative;
+  }
+  article .cards .emptybox {
+    height: 1px;
+    background: black;
+    margin: 1.2rem;
+  }
+  .cards .cardimgbox img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    object-fit: cover;
+  }
+  .cards .cardtextbox {
+    background: #cdcdcda0;
+    padding: 2rem 2rem 2rem 6rem;
+    margin-left: 10rem;
+    border-radius: 4rem;
+  }
+  
+  .review .emptybox {
+    height: 1px;
+    width: 20%;
+    background:red;
+    margin: 1.2rem;
+  }
 
 /* statis section home */
 .stats-section {
@@ -374,4 +480,74 @@ main {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .header{
+    background-color: black;
+}
+body.dark-mode .header .hrxmovers{
+    color: #fff;
+}
+
+body.dark-mode .top-bar,
+body.dark-mode header {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .nav-link {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-link:hover {
+    color: #ff4757;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .card-text {
+    color: #cccccc;
+}
+
+body.dark-mode .stats-section,
+body.dark-mode .services-section {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+body.dark-mode .stats-section h3{
+    color: white;
+}
+
+body.dark-mode .banner {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+body.dark-mode .footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .accordion {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+body.dark-mode .accordion-button {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+body.dark-mode .accordion-body {
+    background-color: #1e1e1e;
+    color: #ffffff;
 }

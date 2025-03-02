@@ -73,3 +73,26 @@ function getCityAndCountry(latitude, longitude) {
             document.getElementById("city-country").innerText = "Failed to fetch city and country.";
         });
 }
+
+// dark mode satarts here
+// Theme Toggle Script
+const toggleButton = document.getElementById('toggle');
+const body = document.body;
+
+// Check for saved theme in localStorage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    body.classList.add(savedTheme);
+    toggleButton.checked = savedTheme === 'dark-mode';
+}
+
+// Toggle Theme
+toggleButton.addEventListener('change', () => {
+    if (toggleButton.checked) {
+        body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark-mode');
+    } else {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light-mode');
+    }
+});
