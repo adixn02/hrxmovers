@@ -42,7 +42,7 @@ body {
 }
 
 /* Top Bar Styling */
-.top-bar,header {
+.top-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -63,9 +63,22 @@ body {
 }
 
 /* Header Styling */
+
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(241, 240, 245);
+  color: black;
+  /* padding: 10px; */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
     background-color: white;
-    padding-top: 60px;
+    margin-top: 3.5rem;
     z-index: 999;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
@@ -206,7 +219,7 @@ main{
 }
 .main {
     display: flex;
-    margin-top: 16rem;
+    margin-top: 9rem;
 
     justify-content: space-between;
     align-items: center;
@@ -229,6 +242,41 @@ main{
     max-width: 100%;
     height: auto;
 }
+
+/* main conatent 3 boxes here  */
+.stats-section {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.stats-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #dc3545; /* Bootstrap text-danger color */
+  margin-bottom: 10px;
+}
+
+.stats-section h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.stats-section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.divider {
+  width: 50px;
+  height: 2px;
+  background-color: #dc3545; /* Bootstrap text-danger color */
+  margin: 20px auto;
+}
+
 /* testimonials starts */
 /* reviw styling */
 article .cards {
@@ -262,39 +310,7 @@ article .cards {
     margin: 1.2rem;
   }
 
-/* statis section home */
-.stats-section {
-    padding: 60px 0;
-    background-color: #fff;
-    text-align: center;
-}
 
-.stats-section h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #dc3545; /* Bootstrap text-danger color */
-    margin-bottom: 10px;
-}
-
-.stats-section h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 10px;
-}
-
-.stats-section p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-top: 10px;
-}
-
-.divider {
-    width: 50px;
-    height: 2px;
-    background-color: #dc3545; /* Bootstrap text-danger color */
-    margin: 20px auto;
-}
 
 /* How Movers Work Section */
 .container {
@@ -334,8 +350,8 @@ article .cards {
 
 /* Service card */
 .servicecard {
-  background-color: #000;
-  color: white;
+  background-color: rgb(238, 238, 238);
+  color: black;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -954,13 +970,22 @@ body.dark-mode .banner {
     color: #ffffff;
 }
 
+/* service card */
+body.dark-mode .servicecard {
+  background-color: black;
+  color: white;
+}
+
 /* faq */
+
 body.dark-mode .faqaccordion .faqaccordiontitle{
-    color: red;
+    color: rgba(188, 66, 66, 0.883);
 }
 
 body.dark-mode .accordion {
-    background-color: #2d2d2d;
+
+    background-color: black;
+  
     color: #ffffff;
 }
 
@@ -972,6 +997,11 @@ body.dark-mode .accordion-button {
 body.dark-mode .accordion-body {
     background-color: #1e1e1e;
     color: #ffffff;
+}
+/* testmonial */
+body.dark-mode .cards .cardtextbox {
+  background-color: rgba(30, 30, 30, 0.502);
+  border: 1px solid red;
 }
 
 /* footer banner */

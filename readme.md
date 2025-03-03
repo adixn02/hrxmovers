@@ -19,8 +19,12 @@ git push -u origin main
 <!-- api key for geo loactions -->
 const apiKey = "ed28d1b8a7504e73a200f2db25f65cf5"; // Replace with your OpenCage API key
 
-<!-- pending -->
+<!-- Home pending -->
 top bar - done
-header - working
-main - penidng
-footer - pending
+header - done
+main - done
+footer - done
+
+<!-- Home pending zoom -->
+1. faq toogle black
+2. mobile responsive
