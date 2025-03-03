@@ -8,6 +8,14 @@ project-folder/
 └── assets/
     └── img/
         └── mover.jpg
+
+git init
+git add .
+git commit -m "initial"
+git branch -M main          # Rename branch to main (if needed)
+git remote add origin https://github.com/username/repository-name.git
+git push -u origin main
+
 <!-- api key for geo loactions -->
 const apiKey = "ed28d1b8a7504e73a200f2db25f65cf5"; // Replace with your OpenCage API key
 

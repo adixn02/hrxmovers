@@ -107,3 +107,22 @@ document.querySelector('.logo-circle').addEventListener('mouseover', function() 
   document.querySelector('.logo-circle').addEventListener('mouseout', function() {
     this.style.transform = 'scale(1)';
   });
+
+// eror scrren
+// Function to check internet connection
+function checkInternet() {
+    if (navigator.onLine) {
+        // If online, hide the TV container
+        document.getElementById('tvContainer').style.display = 'none';
+    } else {
+        // If offline, show the TV container
+        document.getElementById('tvContainer').style.display = 'block';
+    }
+}
+
+// Event listeners for online/offline status
+window.addEventListener('online', checkInternet);
+window.addEventListener('offline', checkInternet);
+
+// Initial check when the page loads
+window.onload = checkInternet;
