@@ -323,17 +323,37 @@ article .cards {
     color: #dc3545; /* Bootstrap text-danger color */
 }
 
-/* cards two men in card */
-.card {
-    width: 80%;
-    max-width: 600px;
-    background-color: #000;
-    color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  
+#servicecards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));  /* Adjust column width */
+  gap: 16px;  /* Spacing between cards */
+  padding: 16px; 
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Service card */
+.servicecard {
+  background-color: #000;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* Ensures content is spaced inside */
+  align-items: center;
+  text-align: center;
+  padding: 6px;
+  transition: transform 0.3s ease;
+  height: 100%;  /* Important: Ensures all cards stretch equally */
+}
+
+.serviceimg{
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+}
   .logo-container {
     display: flex;
     justify-content: center;
@@ -357,9 +377,9 @@ article .cards {
     position: relative;
   }
   
-  .title {
+  .servicetitle {
     text-align: center;
-    font-size: 36px;
+    font-size: 20px;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 1px;

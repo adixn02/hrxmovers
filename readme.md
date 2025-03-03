@@ -13,7 +13,7 @@ git init
 git add .
 git commit -m "initial"
 git branch -M main          # Rename branch to main (if needed)
-git remote add origin https://github.com/username/repository-name.git
+git remote add origin https://github.com/adixn02/hrxmovers.git
 git push -u origin main
 
 <!-- api key for geo loactions -->
