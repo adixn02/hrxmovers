@@ -1,13 +1,16 @@
 
 /* Add to styles.css */
 /* About Us Styles */
-.about-us .values-section .card {
+.about-us {
+    margin-top: 12rem;
+}
+/* .about-us .values-section .card {
     transition: transform 0.3s ease;
-}
+} */
 
-.about-us .values-section .card:hover {
+/* .about-us .values-section .card:hover {
     transform: translateY(-10px);
-}
+} */
 
 .amsterdam-focus iframe {
     border: 3px solid #dc3545;
