@@ -96,3 +96,14 @@ toggleButton.addEventListener('change', () => {
         localStorage.setItem('theme', 'light-mode');
     }
 });
+
+// two men in card
+// Add some hover effect to the logo
+document.querySelector('.logo-circle').addEventListener('mouseover', function() {
+    this.style.transform = 'scale(1.05)';
+    this.style.transition = 'transform 0.3s ease';
+  });
+  
+  document.querySelector('.logo-circle').addEventListener('mouseout', function() {
+    this.style.transform = 'scale(1)';
+  });

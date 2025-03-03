@@ -138,7 +138,11 @@
     </header>
 
     <!-- Main Content -->
-    <main class="d-flex container">
+    <main >
+     
+       <div class="main container">
+
+      
         <div class="textbox">
             <h1 class="mainh1" >Mover & Packer in</h1>
             <h1 class="text-danger mainh1 fw-bold">Edmonton</h1>
@@ -146,6 +150,8 @@
         <div class="imgbox">
             <img src="./assets/img/mover-Photoroom.png" alt="Movers" style="height: 400px; margin-top: 2rem;">
         </div>
+    </div>
+</div>
     </main>
    <!-- Statistics Section -->
        <!-- Statistics Section -->
@@ -186,42 +192,39 @@
             What We Offer You at <span class=" fw-bold h1">HR <sub class="fw-bold h1 text-danger">X</sub>Movers</span>
         </h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            <!-- Card 1: Local Moving -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="./assets/img/local-moving.jpg" alt="Local Moving" />
-                    <div class="card-body">
-                        <h5 class="card-title">Local Moving</h5>
-                        <p class="card-text">
-                            Local moving is what started our brand more than 35 years ago. We offer a professionally trained and background-checked moving team to ensure your belongings are handled with care.
-                        </p>
-                    </div>
+          
+
+            <!-- two men card -->
+            <div class="card">
+               
+
+                <div class="logo-container">
+                  <div class="logo-circle">
+                    <svg class="truck-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                      <path d="M1 3h15v13H1z" fill="#222"/>
+                      <path d="M16 8h4l3 3v5h-7V8z" fill="#222"/>
+                      <circle cx="5.5" cy="18.5" r="2.5" fill="white"/>
+                      <circle cx="18.5" cy="18.5" r="2.5" fill="white"/>
+                      <path d="M15 16H1V3h15" stroke-width="1" stroke="#FFD700"/>
+                    </svg>
+                  </div>
                 </div>
-            </div>
-            <!-- Card 2: Junk Removal -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="./assets/img/junkout.png" alt="Junk Removal" />
-                    <div class="card-body">
-                        <h5 class="card-title">Junk Removal</h5>
-                        <p class="card-text">
-                            Our professional moving teams can assist you with downsizing, home renovations, or spring cleaning to remove old items you no longer want.
-                        </p>
-                    </div>
+                
+                <div class="title">JUNK REMOVAL</div>
+                
+                <div class="wave">
+                  <svg width="300" height="50" viewBox="0 0 300 50">
+                    <path d="M0,25 Q25,0 50,25 Q75,50 100,25 Q125,0 150,25 Q175,50 200,25 Q225,0 250,25 Q275,50 300,25" fill="none" stroke="#4285F4" stroke-width="3" style="--i: 0"/>
+                  </svg>
                 </div>
-            </div>
-            <!-- Card 3: Storage -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="./assets/img/storage.jpg" alt="Storage" />
-                    <div class="card-body">
-                        <h5 class="card-title">Storage</h5>
-                        <p class="card-text">
-                            We offer onsite storage options, including portable, warehouse, and vaulted storage units, providing flexibility for both short and long-term needs.
-                        </p>
-                    </div>
+                
+                <div class="description">
+                  With this new service, our professional moving teams can assist you with downsizing, home renovations, or spring cleaning to remove those old items you no longer want. Schedule our junk removal service prior to your move or whenever you need items hauled away!
                 </div>
-            </div>
+              </div>
+        </div>
+              <!--  -->
+           
         </div>
     </div>
 </section>
@@ -292,8 +295,8 @@
     </article>
 
     <!-- FAQ Section -->
-<div class="container my-5">
-    <h1 class="text-center text-dark mb-4 fw-bold">Frequently Asked Questions</h1>
+<div class="container my-5 faqaccordion">
+    <h1 class="text-center text-dark mb-4 fw-bold faqaccordiontitle">Frequently Asked Questions</h1>
     <div class="accordion" id="faqAccordion" style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
         <!-- FAQ Item 1 -->
         <div class="accordion-item border-0">
@@ -428,7 +431,7 @@
     </div>
 </div>
 <!-- footer banner -->
-<div class="banner">
+<div class="footerbanner">
   <div>
     <h2>READY TO GET MOVING?</h2>
     <br>
@@ -436,6 +439,7 @@
   </div>
     <button class="quote-btn">START YOUR QUOTE</button>
 </div>
+
 <footer>
     <!-- footer -->
       <!-- footer main-->
@@ -449,32 +453,40 @@
                     class="fs-4">Account</span> -->
             </div>
             <div class="col-md-3">
-                <h3 class="h3">Popular </h3>
+                <h3 class="h5 fw-bold">Popular </h3>
                 <ul class="list-unstyled">
                     <!-- update links here -->
-                    <li><a href="#" class="fs-4 text-decoration-none">Personal Loan</a></li>
-                    <li><a href="#" class="fs-4 text-decoration-none">Credit Cards</a></li>
-                    <li><a href="#" class="fs-4 text-decoration-none">Bank Account</a></li>
-                    <li><a href="#" class="fs-4 text-decoration-none">Demat Account</a></li>
+                    <li><a href="#" class="fs-4 text-decoration-none">Local Moving</a></li>
+                    <li><a href="#" class="fs-4 text-decoration-none">Junk Removal</a></li>
+                    <li><a href="#" class="fs-4 text-decoration-none">Storage</a></li>
+                    <li><a href="#" class="fs-4 text-decoration-none">Long-Distance Moving</a></li>
+                    <li><a href="#" class="fs-4 text-decoration-none">Packing Services</a></li>
+                    <li><a href="#" class="fs-4 text-decoration-none">Boxes and Supplies</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
-                <p>HR<sub class="text-danger">x</sub>Movers</p>
+                <p class="h5 fw-bold">HR<sub class="text-danger">x</sub>Movers</p>
                 <ul class="list-unstyled">
                     <li><a href="./about.html" class="fs-4 text-decoration-none">Privacy Policy</a></li>
                     <li><a href="./about.html" class="fs-4 text-decoration-none">Terms & Conditions</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
-                <h3 class="h3">Adress</h3>
+                <h3 class="h5 fw-bold">Subscribe our NewsLetter</h3>
+<!-- From Uiverse.io by 0xnihilism --> 
+<div class="card">
+    <div class="banner">
+      <span class="banner-text">SUBSCRIBE</span>
+      <span class="banner-text">JOIN US</span>
+    </div>
+    <form class="card__form">
+      <input placeholder="Your Email" type="email" required="" />
+      <button class="sign-up">Subscribe</button>
+    </form>
+  </div>
+  
 
-               <address class="fs-5">
-                1105, Rawal Ji Ka Bazar
-Near Hotel Sun City, Ganga Pol
-Jaipur, Rajasthan 302002
-India
-
-               </address>
+              
             </div>
         </div>
         <div class="row">
