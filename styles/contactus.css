@@ -1,0 +1,47 @@
+/* Contact Us Styles */
+.contact-us{
+    margin-top: 12rem;
+}
+.contact-us .form-control {
+    border: 2px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+
+.contact-us .form-control:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.25rem rgba(220,53,69,.25);
+}
+
+.contact-us .btn-danger {
+    background-color: #dc3545;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.contact-us .btn-danger:hover {
+    background-color: #bb2d3b;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode .contactcard{
+    background-color: black;
+}
+body.dark-mode .contact-us.bg-light {
+    background-color: #1a1a1a !important;
+}
+
+body.dark-mode .card {
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+body.dark-mode .form-control {
+    background-color: #1a1a1a;
+    border-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .form-control:focus {
+    background-color: #1a1a1a;
+    color: #fff;
+}

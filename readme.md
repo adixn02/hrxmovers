@@ -26,5 +26,7 @@ main - done
 footer - done
 
 <!-- Home pending zoom -->
-1. faq toogle black
+1. faq toogle black - done
+2. about page done
+3. contact page peding ?
 2. mobile responsive

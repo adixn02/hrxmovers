@@ -9,8 +9,9 @@
     user-select: none;
     font-size: 62.5%;
     text-decoration: none;
+    /* overflow: hidden; */
 }
-
+/* selection */
 *::selection {
     background-color: transparent;
     color: transparent;
@@ -30,7 +31,7 @@
     background-color: red;
     border-radius: 20rem;
 }
-/* reusable classes */
+/* utility classes */
 .mainYellow{
     background-color: rgb(242, 169, 4);
 }
@@ -205,6 +206,8 @@ header {
   #toggle:checked + svg #stars {
     opacity: 1;
   }
+
+  /* 209 done.. */
   
 /* main */
 
@@ -212,12 +215,13 @@ header {
 
 /* Main Content */
 main{
+  /* width: 100%; */
     background-color: rgb(241, 240, 245);
 
 }
 .main {
     display: flex;
-    margin-top: 9rem;
+    margin-top: 12rem;
 
     justify-content: space-between;
     align-items: center;
@@ -232,9 +236,9 @@ main{
   
     font-size: 6rem !important;
 }
-.textbox .text-danger {
+/* .textbox .text-danger {
     color: red;
-}
+} */
 
 .imgbox img {
     max-width: 100%;
@@ -243,6 +247,8 @@ main{
 
 /* main conatent 3 boxes here  */
 .stats-section {
+  
+  overflow: hidden;
   padding: 60px 0;
   background-color: #fff;
   text-align: center;
@@ -339,11 +345,12 @@ article .cards {
 
 #servicecards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));  /* Adjust column width */
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));  /* Adjust column width */
   gap: 16px;  /* Spacing between cards */
-  padding: 16px; 
+  /* padding: 16px;  */
   margin: 0 auto;
   max-width: 1200px;
+  /* border: 1px solid red; */
 }
 
 /* Service card */
@@ -770,20 +777,24 @@ article .cards {
   }
   
 
-/* Responsive Design */
+
 @media only screen and (max-width: 1000px) {
+  header{
+    padding: 5px;
+  }
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 12rem;
+        top: 14rem;
         flex-direction: column;
         background-color:white;
         width: 100%;
         border-radius: 10px;
         text-align: center;
-      
+        border-top: 1px solid wheat;
         transition: 0.3s;
         /* border: 2px solid green; */
+        padding: 2rem;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
@@ -810,7 +821,141 @@ article .cards {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    /* main */
+
+    .main{
+      width: 100vw;
+      /* margin-top: 12rem; */
+      padding-top: 10rem;
+      display: block;
+ 
+      /* margin: auto; */
+    }
+    main .mainh1{
+
+      font-size: 2rem;
+    }
+    main .imgbox {
+      width: 100%;
+    }
+    main .imgbox img {
+      width: 100%;
+    }
+    .subscard{
+      margin: 3rem auto;
+  
+  
+    }
+    
+    
+
 }
+
+@media only screen and (max-width: 600px) {
+    .nav-logo h1 {
+        font-size: 2rem;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .nav-link {
+        font-size: 1.4rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* main */
+
+    .main{
+      width: 100vw;
+      /* margin-top: 12rem; */
+      padding-top: 10rem;
+      display: block;
+    
+      /* margin: auto; */
+    }
+    main .mainh1{
+
+      font-size: 2rem;
+    }
+    main .imgbox {
+      width: 100%;
+  
+    }
+    main .imgbox img {
+      width: 100%;
+    }
+    /* testmonial */
+    .cards .cardimgbox img {
+      height: 6rem;
+      width: 6rem;
+      top: 1rem;
+    }
+    .cards .cardtextbox {
+      padding: 2rem 2rem 2rem 2rem;
+      margin-left: 5rem;
+    }
+    .cardshow {
+      height: 10rem;
+      background: white;
+      width: 12rem;
+    }
+    /* .why-us-icons {
+      font-size: 2rem;
+    }
+  
+    .places {
+      display: block;
+      gap: 5rem;
+    }
+  
+    .place {
+      max-width: 100% !important;
+      margin-top: 2rem;
+    } */
+
+
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .cards{
+    margin-top: 2rem;
+  }
+  .cards .cardtextbox {
+      padding: 2rem 2rem 2rem 2rem;
+      margin-left: 2rem;
+      width: 100%;
+      padding-left: 5rem;
+  }
+  .footerbanner {
+display: block;
+  }
+  .subscard{
+    margin: 3rem auto;
+
+
+  }
+}
+
+
 
 
   
@@ -920,6 +1065,7 @@ body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
+/* header daark */
 
 body.dark-mode .header{
     background-color: black;
@@ -933,6 +1079,14 @@ body.dark-mode header {
     background-color: #1e1e1e;
     color: #ffffff;
 }
+body.dark-mode .hamburger .bar{
+  background-color: white;
+}
+body.dark-mode .nav-menu{
+  
+  background-color: #000;
+
+}
 
 body.dark-mode .nav-link {
     color: #ffffff;
@@ -941,6 +1095,7 @@ body.dark-mode .nav-link {
 body.dark-mode .nav-link:hover {
     color: #ff4757;
 }
+/* main */
 body.dark-mode main{
     background-color:rgb(18, 18, 18) ;
 }
@@ -998,6 +1153,7 @@ body.dark-mode .accordion-body {
 }
 /* testmonial */
 body.dark-mode .cards .cardtextbox {
+  box-sizing: border-box;
   background-color: rgba(30, 30, 30, 0.502);
   border: 1px solid red;
 }
@@ -1014,3 +1170,4 @@ body.dark-mode .footer {
     background-color: #1e1e1e;
     color: #ffffff;
 }
+

@@ -6,17 +6,14 @@
     <meta charset="UTF-8" />
     <!-- Viewport for Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Bootstrap CSS for Responsive Design -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-          bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootsrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles/styles.css" />
     <!-- Title -->
@@ -27,10 +24,10 @@
     <!-- Top bar for displaying location information -->
     <div class="top-bar d-flex align-items-center">
         <div class="location-info d-flex align-items-center" id="location">
-            <i class="fa fa-map-marker h5"></i> <!-- City/Country Icon -->
+            <i class="fa fa-phone h5"></i> <!-- City/Country Icon -->
             <span id="city-country" class="h5">Fetching city and country...</span>
             <i class="fa fa-arrow-right"></i> <!-- Arrow Icon -->
-            <span id="coordinates" class="h5">Fetching coordinates...</span>
+            <span id="coordinates" class="h5 d-none d-lg-block">Fetching coordinates...</span>
         </div>
         <div class="telephone-info">
             <i class="fa fa-phone"></i> <!-- Phone Icon -->
@@ -54,19 +51,6 @@
                 <li class="nav-item">
                     <a href="./Pages/contact-us.html" class="nav-link text-decoration-none">Contact Us</a>
                 </li>
-                <li class="nav-item">
-                    <a href="./privacypolicy.html" class="nav-link text-decoration-none">Privacy Policy</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./dmca.html" class="nav-link text-decoration-none">DMCA</a>
-                </li>
-                <!-- <div class="d-flex mt-1 align-items-center justify-content-center mb-5 mb-md-0" style="gap: 4px">
-                    <a href="#" target="_blank" class="text-decoration-none">
-                        <button class=" fw-bold h2 mainYellow" style="border-radius: 10px; padding: 8px 13px;border: none;">
-                            Free Quote
-                        </button>
-                    </a>
-                </div> -->
                 <a href="#" target="_blank" class="text-decoration-none">
                     <button class=" fw-bold h2 mainYellow text-black ms-md-3"
                         style="border-radius: 10px; padding: 8px 13px;border: none;">
@@ -182,10 +166,11 @@
                 <h1 class="text-danger mainh1 fw-bold">Edmonton</h1>
             </div>
             <div class="imgbox">
-                <img src="./assets/img/mover-Photoroom.png" alt="Movers" style="height: 400px; margin-top: 2rem;">
+                <img class="mainboxIMg" src="./assets/img/mover-Photoroom.png" alt="Movers" style="height: 400px; margin-top: 2rem;">
             </div>
         </div>
-        </div>
+
+
 
     </main>
     <!-- Statistics Section -->
@@ -194,29 +179,28 @@
         <div class="container">
             <!-- Customer Referral Rate -->
             <div class="row mb-5">
-                <div class="col-4">
+                <!-- For mobile, stack the columns vertically -->
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <h2 class="fw-bold">96%</h2>
                     <h3>CUSTOMER REFERRAL RATE</h3>
                     <div class="divider"></div>
                     <p class="fs-6">Our customers are so happy, they’re spreading the word.</p>
                 </div>
                 <!-- trucks on road -->
-                <div class="col-4">
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <h2 class="fw-bold">10+</h2>
                     <h3>TRUCKS ON THE ROAD</h3>
                     <div class="divider"></div>
                     <p class="fs-6">Launch your career with a growing moving franchise.</p>
                 </div>
                 <!-- Locations Worldwide -->
-
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <h2 class="fw-bold">Edmonton</h2>
                     <h3>Focused</h3>
                     <div class="divider"></div>
                     <p class="fs-6">Open your own franchise with the largest moving franchise in the country.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -227,11 +211,11 @@
                 What We Offer You at <span class=" fw-bold h1">HR <sub
                         class="fw-bold h1 text-danger">X</sub>Movers</span>
             </h2>
-        
-                <div id="servicecards">
+
+            <div id="servicecards">
                 <!-- service cards here -->
 
-                </div>
+            </div>
 
 
             <!--  -->
@@ -240,7 +224,7 @@
         </div>
     </section>
 
-   
+
 
     <article>
         <div class="row m-5">
@@ -254,9 +238,9 @@
         </div>
         <div class="row m-5">
 
-            <div class="col-12 col-lg-4 cards mb-3 m-auto" >
+            <div class="col-12 col-lg-4 cards mb-3 ">
                 <div class="cardimgbox"><img src="./Assets/img/users/u1.png" alt=""> </div>
-                <div class="cardtextbox" >
+                <div class="cardtextbox">
                     <h1 class="h3">George</h1>
                     <p class="fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, debitis!</p>
                     <div class="emptybox"></div>
@@ -269,7 +253,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-lg-4 cards mb-3 m-auto">
+            <div class="col-12 col-lg-4 cards mb-3 ">
                 <div class="cardimgbox"><img src="./Assets/img/users/u2.png" alt=""> </div>
                 <div class="cardtextbox">
                     <h1 class="h3">Isabella</h1>
@@ -284,8 +268,9 @@
             </div>
 
 
-            <div class="col-12 cards mb-md-3 col-lg-4  m-auto">
-                <div class="cardimgbox"><img src="./Assets/img/users/u3.png" alt="" style="background-color: black;"> </div>
+            <div class="col-12 cards mb-md-3 col-lg-4  ">
+                <div class="cardimgbox"><img src="./Assets/img/users/u3.png" alt="" style="background-color: black;">
+                </div>
                 <div class="cardtextbox">
                     <h1 class="h3">Lisa</h1>
                     <p class="fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, debitis!</p>
@@ -309,9 +294,8 @@
             <!-- FAQ Item 1 -->
             <div class="accordion-item border-0">
                 <h2 class="accordion-header" id="faqHeading1">
-                    <button class="accordion-button collapsed fw-bold fs-5" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false"
-                        aria-controls="faqCollapse1">
+                    <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
                         What areas do you operate in?
                     </button>
                 </h2>
@@ -326,9 +310,8 @@
             <!-- FAQ Item 2 -->
             <div class="accordion-item border-0">
                 <h2 class="accordion-header" id="faqHeading2">
-                    <button class="accordion-button collapsed fw-bold fs-5" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false"
-                        aria-controls="faqCollapse2">
+                    <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
                         How can I get a quote for my move?
                     </button>
                 </h2>
@@ -344,9 +327,8 @@
             <!-- FAQ Item 3 -->
             <div class="accordion-item border-0">
                 <h2 class="accordion-header" id="faqHeading3">
-                    <button class="accordion-button collapsed fw-bold fs-5" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false"
-                        aria-controls="faqCollapse3">
+                    <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
                         What payment methods do you accept?
                     </button>
                 </h2>
@@ -361,9 +343,8 @@
             <!-- FAQ Item 4 -->
             <div class="accordion-item border-0">
                 <h2 class="accordion-header" id="faqHeading4">
-                    <button class="accordion-button collapsed fw-bold fs-5" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false"
-                        aria-controls="faqCollapse4">
+                    <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
                         How do I book a move with you?
                     </button>
                 </h2>
@@ -378,9 +359,8 @@
             <!-- FAQ Item 5 -->
             <div class="accordion-item border-0">
                 <h2 class="accordion-header" id="faqHeading5">
-                    <button class="accordion-button collapsed fw-bold fs-5" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false"
-                        aria-controls="faqCollapse5">
+                    <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
                         Do you provide packing materials?
                     </button>
                 </h2>
@@ -395,9 +375,8 @@
             <!-- FAQ Item 6 -->
             <div class="accordion-item border-0">
                 <h2 class="accordion-header" id="faqHeading6">
-                    <button class="accordion-button collapsed fw-bold fs-5" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false"
-                        aria-controls="faqCollapse6">
+                    <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
                         Can I reschedule or cancel my move?
                     </button>
                 </h2>
@@ -412,9 +391,8 @@
             <!-- FAQ Item 7 -->
             <div class="accordion-item border-0">
                 <h2 class="accordion-header" id="faqHeading7">
-                    <button class="accordion-button collapsed  fw-bold fs-5" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#faqCollapse7" aria-expanded="false"
-                        aria-controls="faqCollapse7">
+                    <button class="accordion-button collapsed  fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
                         How can I contact you for support?
                     </button>
                 </h2>
@@ -429,9 +407,8 @@
             <!-- FAQ Item 8 -->
             <div class="accordion-item border-0">
                 <h2 class="accordion-header" id="faqHeading8">
-                    <button class="accordion-button collapsed fw-bold fs-5" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#faqCollapse8" aria-expanded="false"
-                        aria-controls="faqCollapse8">
+                    <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8">
                         Do you offer insurance for my belongings?
                     </button>
                 </h2>
@@ -446,9 +423,8 @@
             <!-- FAQ Item 9 -->
             <div class="accordion-item border-0">
                 <h2 class="accordion-header" id="faqHeading9">
-                    <button class="accordion-button collapsed fw-bold fs-5" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#faqCollapse9" aria-expanded="false"
-                        aria-controls="faqCollapse9">
+                    <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse9" aria-expanded="false" aria-controls="faqCollapse9">
                         What if I have special items to move?
                     </button>
                 </h2>
@@ -463,9 +439,8 @@
             <!-- FAQ Item 10 -->
             <div class="accordion-item border-0">
                 <h2 class="accordion-header" id="faqHeading10">
-                    <button class="accordion-button collapsed fw-bold fs-5" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#faqCollapse10" aria-expanded="false"
-                        aria-controls="faqCollapse10">
+                    <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse10" aria-expanded="false" aria-controls="faqCollapse10">
                         How do I track my move?
                     </button>
                 </h2>
@@ -495,12 +470,12 @@
         <div class=" mt-5 pt-5 footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 mb-3">
+                    <div class="col-lg-3 mb-3">
                         <h1 class="fw-bold">HR<sub class="text-danger fw-bold">x</sub>Movers</h1>
                         <span class="fs-4 ms-5">Fast, Relialable, Cheap !</span>
                         <!-- truck moving code -->
                         <!-- From Uiverse.io by vinodjangid07 -->
-                        <div class="loader">
+                        <div class="loader m-auto">
                             <div class="truckWrapper">
                                 <div class="truckBody">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 198 93"
@@ -558,7 +533,7 @@
 
                         <!-- truck moving code -->
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         <h3 class="h5 fw-bold">Popular </h3>
                         <ul class="list-unstyled">
                             <!-- update links here -->
@@ -570,17 +545,17 @@
                             <li><a href="#" class="fs-4 text-decoration-none">Boxes and Supplies</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         <p class="h5 fw-bold">HR<sub class="text-danger">x</sub>Movers</p>
                         <ul class="list-unstyled">
                             <li><a href="./about.html" class="fs-4 text-decoration-none">Privacy Policy</a></li>
                             <li><a href="./about.html" class="fs-4 text-decoration-none">Terms & Conditions</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         <h3 class="h5 fw-bold">Subscribe our NewsLetter</h3>
                         <!-- From Uiverse.io by 0xnihilism -->
-                        <div class="card">
+                        <div class="card subscard">
                             <div class="banner">
                                 <span class="banner-text">SUBSCRIBE</span>
                                 <span class="banner-text">JOIN US</span>
@@ -597,23 +572,14 @@
                 </div>
                 <div class="row">
                     <div class="col text-center fs-5">
-                        <h1 class="fw-bold">HR<sub class="text-danger fw-bold">x</sub>Movers</h1> © 2025 Copyright
+                        
+                        <h1 class="fw-bold d-inline-block">HR<sub class="text-danger fw-bold">x</sub>Movers</h1> © 2025 Copyright
                     </div>
                 </div>
             </div>
     </footer>
 
-    <!-- tv wrapper -->
-    <!-- From Uiverse.io by Sophiek9h -->
-    <!-- From Uiverse.io by Cksunandh -->
-    <div class="tv-container" id="tvContainer" style="display: none;">
-        <div class="tv-screen">
-            <div class="static"></div>
-            <div class="error-text">ERROR - Check your internet Connection</div>
-        </div>
-        <button class="tv-stand text-center fs-3 text-white" onclick="checkInternet()">Click Here to Refresh</button>
-    </div>
-
+   
 
     <!-- JavaScript -->
     <script src="./scripts/script.js"></script>
