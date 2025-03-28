@@ -215,6 +215,16 @@ main{
       padding: 2rem;
   }
 
+  .homestart{
+    background-color: #dc3545;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
   .textbox h1 {
     font-size: 3rem;
     font-weight: 600;
@@ -626,6 +636,9 @@ main{
   /* done 780  */
 
   @media only screen and (max-width: 1000px) {
+    * {
+        font-size: 45%;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -711,4 +724,116 @@ main{
    
     
   }
+
+  /* light mode */
+  /* Light Mode Styles */
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.light-mode .top-bar {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.light-mode header {
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .nav-logo h1 {
+  color: #333;
+}
+
+.light-mode .nav-link {
+  color: #333;
+}
+
+.light-mode .nav-link:hover {
+  color: #dc3545;
+}
+.light-mode main {
+  background-color: #f8f9fa;
+}
+
+.light-mode .stats-section {
+  background-color: #ffffff;
+}
+
+.light-mode .stats-section h3 {
+  color: #333;
+}
+
+.light-mode .cards .cardtextbox {
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .servicecard {
+  background-color: #ffffff;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode #faqAccordion {
+  background-color: #ffffff;
+}
+
+.light-mode .accordion-item {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.light-mode .accordion-body {
+  background-color: #f8f9fa;
+}
+
+.light-mode .footerbanner {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.light-mode .footer {
+  background-color: #ffffff;
+}
+
+.light-mode .hamburger .bar {
+  background-color: #333;
+}
+
+.light-mode .faqaccordiontitle {
+  color: #dc3545;
+}
+
+.light-mode .divider {
+  background-color: #dc3545;
+}
+
+.light-mode .footerbanner h2::after {
+  background-color: #dc3545;
+}
+
+.light-mode .quote-btn {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.light-mode .quote-btn::before,
+.light-mode .quote-btn::after {
+  background-color: #ffc107;
+}
+
+/* Update the hamburger menu color in light mode */
+.light-mode .hamburger .bar {
+  background-color: #333;
+}
+.light-mode .nav-menu {
+  background-color: #ffffff;
+  color: #333;
+}
+.light-mode .nav-menu.active {
+  background-color: #ffffff;
+  color: #333;
+}
   

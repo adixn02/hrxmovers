@@ -3,37 +3,34 @@ let ham = document.querySelector('.hamburger');
 let nav = document.querySelector('.nav-menu');
 ham.addEventListener('click', () => {
     nav.classList.toggle('active');
+    ham.classList.toggle('active');
 });
 
-
-
-
-
-
-// dark mode satarts here
 // Theme Toggle Script
 const toggleButton = document.getElementById('toggle');
 const body = document.body;
 
-// Check for saved theme in localStorage
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-    body.classList.add(savedTheme);
-    toggleButton.checked = savedTheme === 'dark-mode';
-}
+// Check for saved theme preference or default to dark mode
+const savedTheme = localStorage.getItem('theme') || 'dark-mode';
+body.classList.add(savedTheme);
+
+// Set toggle button state based on current theme
+toggleButton.checked = savedTheme === 'light-mode';
 
 // Toggle Theme
 toggleButton.addEventListener('change', () => {
     if (toggleButton.checked) {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        localStorage.setItem('theme', 'light-mode');
+    } else {
+        body.classList.remove('light-mode');
         body.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark-mode');
-    } else {
-        body.classList.remove('dark-mode');
-        localStorage.setItem('theme', 'light-mode');
     }
 });
-// service cards
 
+// Service Cards - Same as before
 const servicesData = [
     {
         title: "JUNK REMOVAL",
@@ -67,13 +64,9 @@ const servicesData = [
     }
 ];
 
-
 const serviceCardsContainer = document.getElementById('servicecards');
 
-
-
 servicesData.forEach(service => {
-    console.log(service)
     const cardHTML = `
         <div class="col">
             <div class="servicecard">
@@ -91,39 +84,6 @@ servicesData.forEach(service => {
             </div>
         </div>
     `;
-
     serviceCardsContainer.insertAdjacentHTML('beforeend', cardHTML);
 });
-
-// two men in card
-// Add some hover effect to the logo
-document.querySelector('.logo-circle').addEventListener('mouseover', function() {
-    this.style.transform = 'scale(1.05)';
-    this.style.transition = 'transform 0.3s ease';
-  });
-  
-  document.querySelector('.logo-circle').addEventListener('mouseout', function() {
-    this.style.transform = 'scale(1)';
-  });
-
-// eror scrren
-// Function to check internet connection
-function checkInternet() {
-    if (navigator.onLine) {
-        // If online, hide the TV container
-        document.getElementById('tvContainer').style.display = 'none';
-    } else {
-        // If offline, show the TV container
-        document.getElementById('tvContainer').style.display = 'block';
-    }
-}
-
-// Event listeners for online/offline status
-window.addEventListener('online', checkInternet);
-window.addEventListener('offline', checkInternet);
-
-// Initial check when the page loads
-window.onload = checkInternet;
-
-
 

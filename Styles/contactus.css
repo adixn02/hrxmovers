@@ -1,0 +1,9 @@
+.contact-us{
+    margin-top: 12rem;
+}
+.contactcard{
+    background-color: black;
+}
+.light-mode .contactcard{
+    background-color: white;
+}
